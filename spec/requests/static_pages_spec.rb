@@ -17,6 +17,10 @@ describe "Static pages" do
 
     it_should_behave_like "all static pages"
     it { should_not have_title('| Home') }
+    it {should have_logo ("sample app")}
+    it {should have_image_logo }
+    it {should have_button_signup }
+
     end
 
 

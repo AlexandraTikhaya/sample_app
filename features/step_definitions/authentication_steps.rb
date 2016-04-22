@@ -6,7 +6,7 @@ When /^they submit invalid signin information$/ do
   click_button "Sign in"
 end
 Then /^they should see an error message$/ do
-  expect(page).to have_selector('div.alert.alert-error')
+  expect(page).to have_selector('div.alert.bg-danger')
 end
 
 Given /^the user has an account$/ do

@@ -174,3 +174,40 @@ footer {
     @extend .text-danger;
   }
 }
+
+//button
+
+.buttons{
+  margin-top: 20px;
+  background-color: #337AB7 ;
+  width: auto;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  margin-left: 47%;
+  color: white;
+  font-weight: 900;
+}
+
+#head{
+  background-color: #1b6d85;
+}
+
+.margin{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+      border-bottom: 1px solid $grayLighter;
+    }
+  }
+}
