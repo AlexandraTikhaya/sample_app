@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/bmabey/database_cleaner.git
-  revision: bc16ceee741a8b8912f1006b6cb2d0682946910c
+  revision: f15d7610a801e40d1570b56e869e563cdcff198a
   specs:
-    database_cleaner (1.5.2)
+    database_cleaner (1.5.3)
 
 GEM
   remote: https://rubygems.org/
@@ -120,7 +120,7 @@ GEM
     mime-types-data (3.2016.0221)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
-    multi_json (1.11.2)
+    multi_json (1.11.3)
     multi_test (0.1.2)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
@@ -166,6 +166,9 @@ GEM
     rspec-expectations (3.4.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.4.0)
+    rspec-its (1.2.0)
+      rspec-core (>= 3.0.0)
+      rspec-expectations (>= 3.0.0)
     rspec-mocks (3.4.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.4.0)
@@ -238,6 +241,7 @@ DEPENDENCIES
   pg (= 0.18.4)
   rails (= 4.2.0)
   rails_12factor (= 0.0.2)
+  rspec-its
   rspec-rails (~> 3.4.0)
   sass-rails (= 5.0)
   sdoc (= 0.3.20)

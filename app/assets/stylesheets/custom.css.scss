@@ -6,7 +6,7 @@ $grayMediumLight: #eaeaea;
 $grayLight: #CBCBCB;
 $grayDarker: #696969;
 $grayLighter: #e8e8e8;
-
+$blue: blue;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -148,6 +148,36 @@ footer {
     float: left;
     margin-right: 10px;
   }
+
+  .stats {
+    overflow: auto;
+    a {
+      float: left;
+      padding: 0 10px;
+      border-left: 1px solid $grayLighter;
+      color: gray;
+      &:first-child {
+        padding-left: 0;
+        border: 0;
+      }
+      &:hover {
+        text-decoration: none;
+        color: $blue;
+      }
+    }
+    strong {
+      display: block;
+    }
+  }
+
+  .user_avatars {
+    overflow: auto;
+    margin-top: 10px;
+    .gravatar {
+      margin: 1px 1px;
+    }
+  }
+
 
   /* forms */
 
