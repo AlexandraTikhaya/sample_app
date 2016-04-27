@@ -67,6 +67,25 @@ describe "Static pages" do
       end
     end
 
+
+    describe "profile page" do
+       let(:user) { FactoryGirl.create(:user) }
+        before do
+          FactoryGirl.create(:micropost, user: user, content: "Lorem")
+          FactoryGirl.create(:micropost, user: user, content: "Ipsum")
+          before { visit user_path(user) }
+
+
+          describe "follower/following counts" do
+            let(:other_user) { FactoryGirl.create(:user) }
+            before do
+              other_user.follow!(user)
+              visit user_path(user)
+            end
+            it { should have_link("0 following", href: following_user_path(user)) }
+            it { should have_link("1 followers", href: followers_user_path(user)) }
+        end
+    end
     end
 
 
@@ -109,4 +128,5 @@ end
 
 
   end
-end
+  end
+  end
